@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* common */
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  color: #555;
+  line-height: 1.5;
+}
+
+img{
+  width: 100%;
+}
+/* 全体の設定 */
+.wrapper{
+  max-width: 940px;
+  /* コンテンツを中央そろえ(0=上下、auto=左右) */
+  margin: 0 auto;
+  /* 狭くても余白でるように調整 */
+  padding: 0 10px;
+}
