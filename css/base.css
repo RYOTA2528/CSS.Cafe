@@ -22,3 +22,36 @@ img{
   /* 狭くても余白でるように調整 */
   padding: 0 10px;
 }
+
+/* header */
+header{
+  /* 上部に色付きの線を作成(solidで実線) */
+  border-top: 8px solid #8c6239;
+}
+/*hedaer画像の調整*/
+.header_logo{
+  width: 90px;
+}
+/* headerの画像とナビゲーション要素の設定 */
+.header_content{
+  /* 横並び */
+  display: flex;
+/* 垂直方向の配置位置の指定（中央揃え） */
+  align-items: center;
+/* 要素を両端配置 */
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+/* nl要素を横並びにする */
+header nav ul {
+  display: flex;
+}
+/* liの間隔調整 */
+header nav ul li {
+  margin-left: 10px;
+}
+/* ナビゲーション要素の下線を消す */
+header nav ul li a{
+  text-decoration: none;
+}
