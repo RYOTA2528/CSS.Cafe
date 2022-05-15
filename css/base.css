@@ -67,9 +67,11 @@ header nav ul li.current a{
   width: 100%;
   /* 50vh は画面の50％分の幅という意味*/
   height: 50vh;
-  background-image: url(https://via.placeholder.com/3000x2500);
+  /* https://via.placeholder.com/3000x2500 */
+  /* ../でbass.cssの一つ上の階層(CSS.CAFE)の中のimages/cafe.png を設定*/
+  background-image: url(../images/cafe.jpg);
 /* イメージ画像をリピートしないように設定 */
-  backgroud-repeat: no-repeat;
+  background-repeat: no-repeat;
   /* イメージ画像の場所の設定 */
   background-position: center;
   /* 背景画像がbackground-imageを覆うように設定 */
