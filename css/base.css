@@ -174,4 +174,20 @@ small {
   font-size: 0.7rem;
 }
 
+/* responsive設定 */
 /* メディアクエリ（表示する画面に応じてスタイルを切り替えられる） */
+@media(max-width: 600px){
+  html{
+    font-size: 87.5%;
+  }
+
+  .header_logo{
+    width: 60px;
+  }
+/* contents内を600px以下のとき縦並びにする */
+  .contents{
+    /* 縦並び */
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
