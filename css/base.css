@@ -91,3 +91,70 @@ header nav ul li.current a{
 #sider{
   width: 35%;
 }
+
+/* 見出しの調整 */
+#home h2{
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #8c6239;
+  font-size: 1.5rem;
+}
+
+/* section id=info の中のdl設定 */
+#info dl{
+  display: flex;
+  /* 横並びで納まり切らない時のためにflex-wrapで改行 */
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+
+#info dt {
+/* 拡大縮小してもフォントサイズが崩れないようにするため */
+  width: 7em;
+}
+/* 後半に続いてしまう次のdt要素(7em)分の消し、横並びにdtとddを表示するように設定 */
+#info dd{
+  width: calc(100% - 7em);
+}
+
+#info dt,
+#info dd{
+  /* 最後に下の余白を作る */
+  margin-bottom: 10px;
+}
+
+/* ↑と同様にli要素も間隔調整 */
+#campaign ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+/* footer */
+footer{
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #a67c52;
+}
+
+footer ul {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+footer ul li {
+  /* 改行せず(block要素)inlineをする */
+  display: inline-block;
+  margin: 5px;
+}
+/* リンクの文字色を白色にする */
+footer ul li a{
+  color: #fff;
+}
