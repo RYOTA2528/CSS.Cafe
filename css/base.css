@@ -54,4 +54,40 @@ header nav ul li {
 /* ナビゲーション要素の下線を消す */
 header nav ul li a{
   text-decoration: none;
+  color: #555;
+}
+/* ナビゲーション要素の色の設定(マウスオーバーの際にも色が変わる) */
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a{
+  color: #8c6239; 
+}
+
+#main_image{
+  width: 100%;
+  /* 50vh は画面の50％分の幅という意味*/
+  height: 50vh;
+  background-image: url(https://via.placeholder.com/3000x2500);
+/* イメージ画像をリピートしないように設定 */
+  backgroud-repeat: no-repeat;
+  /* イメージ画像の場所の設定 */
+  background-position: center;
+  /* 背景画像がbackground-imageを覆うように設定 */
+  background-size: cover;
+}
+
+/* contents */
+.contents{
+  /* div contents内の要素は順番にmainタグ→asideタグ。つまりflexでこの２つの要素で横並びになる */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#main-conten{
+  width: 65%;
+}
+
+#sider{
+  width: 35%;
 }
