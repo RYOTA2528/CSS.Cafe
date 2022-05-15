@@ -190,4 +190,10 @@ small {
     flex-direction: column;
     margin-top: 10px;
   }
+
+  #main_content,
+  #sidebar{
+    /* メインコンテンツとサイドバーを同じにし余白を消す */
+    width: 100%;
+  }
 }
