@@ -158,3 +158,20 @@ footer ul li {
 footer ul li a{
   color: #fff;
 }
+/* (注意)a:linkとしないと下線を消せない */
+footer ul li a:link {
+  text-decoration: none;
+}
+
+/* (注意)a:hover、a:activeでも同様の設定 */
+footer ul li a:hover,
+footer ul li a:active{
+  /* マウスオーバーで70％上部へ投下するよう設定(opacity) */
+  opacity: .7;
+}
+/* 著作権表示を小さく設定 */
+small {
+  font-size: 0.7rem;
+}
+
+/* メディアクエリ（表示する画面に応じてスタイルを切り替えられる） */
